@@ -1,8 +1,11 @@
 package com.example.demo;
 
-import ch.qos.logback.core.joran.spi.ConsoleTarget;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -11,6 +14,11 @@ public class DemoApplication {
 
         SpringApplication.run(DemoApplication.class, args);
         System.out.println("Hello World");
+        List<Integer> list = new ArrayList<>();
+
+
+
+
 
     }
 
