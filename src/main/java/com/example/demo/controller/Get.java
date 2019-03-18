@@ -8,9 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Get {
 
+
     @GetMapping("/get/{id}")
     @ResponseBody
     public String get(@PathVariable String id){
+
+
 
         return id;
 
