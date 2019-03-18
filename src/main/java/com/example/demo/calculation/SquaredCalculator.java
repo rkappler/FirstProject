@@ -23,5 +23,5 @@ public class SquaredCalculator {
     public CacheHelper getCache() {
         return cache;
     }
-//standard getters and setters;
+
 }
