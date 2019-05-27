@@ -1,24 +1,42 @@
 package com.example.demo;
 
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
-@Slf4j
-@SpringBootApplication
+
+
 public class DemoApplication {
+
+    public class BitCounting {
+
+        public static int countBits(int n){
+            String bit = Integer.toBinaryString(n);
+            List<String> list = new ArrayList<>();
+            for(int i=0; i < bit.length(); i++) {
+                list.add(bit.charAt(i).toString());
+            }
+            List<String> filteredList = list.stream().filter(c -> c.equals("1")))
+               .collect(Collectors.toList());
+
+            int count = filteredList.size();
+            return count;
+        }
+
+    }
 
     public static void main(String[] args) {
 
-        SpringApplication.run(DemoApplication.class, args);
-        System.out.println("Hello World");
-        List<Integer> list = new ArrayList<>();
 
-        log.debug("Array: " + list.toString());
+
+
+
+
+
+
 
     }
 
